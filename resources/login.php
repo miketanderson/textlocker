@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
         $key = hash_password($password,$salt);
         $_SESSION['user_key']=$key;
         $_SESSION['user_hash']=$user_hash;
-        header("location: viewer.php");
+        header("location: text_view.php");
 
       } else {
         $error = "Username or password is invalid";

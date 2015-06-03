@@ -34,7 +34,7 @@ if (file_exists($data_file) ) {
 
 <html>
 <head>
-<title>Data Viewer</title>
+<title>Edit Data</title>
 </head>
 <body>
 <div id="view">

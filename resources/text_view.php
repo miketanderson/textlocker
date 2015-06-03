@@ -39,6 +39,7 @@ if (file_exists($data_file) ) {
   #print $text;
   print '</p>';
 
+  print $error;
  ?>
 </p>
 <?php require_once('footer.php') ?>
