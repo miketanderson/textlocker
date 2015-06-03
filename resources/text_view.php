@@ -2,6 +2,7 @@
 #http://www.formget.com/login-form-in-php/
 require_once('isActive.php');
 require_once('edit_text.php');
+require_once('Parsedown/Parsedown.php');
 $login_session=$_SESSION['user_name'];
 $key = $_SESSION['user_key'];
 $hash = $_SESSION['user_hash'];
@@ -27,12 +28,15 @@ if (file_exists($data_file) ) {
 <body>
 <div id="view">
 <p><b id="welcome">Welcome: <i><?php echo $login_session; ?></i></b></p>
+<hr>
 <p>
 <?php 
 #echo $key;
  
   print '<p><div id="text_view">';
-  print $text;
+  $Parsedown = new Parsedown();
+  print $Parsedown->text($text);
+  #print $text;
   print '</p>';
 
  ?>

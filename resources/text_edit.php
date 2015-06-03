@@ -39,6 +39,7 @@ if (file_exists($data_file) ) {
 <body>
 <div id="view">
 <p><b id="welcome">Welcome: <i><?php echo $login_session; ?></i></b></p>
+<hr>
 <p>
 <?php 
 
