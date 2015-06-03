@@ -6,6 +6,8 @@ Session.vim
 .netrwhist
 *~
 #ignore data files
-.txte
-.dat
-.salt
+*.txte
+*.dat
+*.salt
+#ignore pepper file specific to the application
+/data/pepper.conf
