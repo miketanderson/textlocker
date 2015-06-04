@@ -9,5 +9,6 @@ Session.vim
 *.txte
 *.dat
 *.salt
+*.chk
 #ignore pepper file specific to the application
 /data/pepper.conf
